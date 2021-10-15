@@ -9,23 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- Шапка сайта -->
     <header>
-        <nav>
+        <div class="container">
+        <nav class='main-nav'>
             <a href="./index.html" class='logo'>
                 <span lang='en' class='logo logo-part'>Web</span><span lang='en'>Studio</span>
             </a>
     
             <ul class='site-nav'>
-                <li><a href="./index.html" class="nav-link">Студия</a></li>
-                <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-                <li><a href="" class="nav-link">Контакты</a></li>
+                <li class='item'><a href="./index.html" class="nav-link">Студия</a></li>
+                <li class='item'><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+                <li class='item'><a href="" class="nav-link">Контакты</a></li>
             </ul>
-        </nav>
+
         <ul class='contact-list'>
             <li class='contact-item'>
                 <a href="mailto:info@example.com" class='contact'>
@@ -38,9 +41,12 @@
                 </a>
             </li>
         </ul>
+    </div>
+        </nav>
     </header>
 
     <main>
+        <div class="container">
         <h2 class='portfolio-title title visually-hidden '>
             Портфолио
         </h2>
@@ -152,6 +158,7 @@
                 </p>
             </li>
         </ul>
+        </div>
     </main>
 
     <!-- Футер -->
