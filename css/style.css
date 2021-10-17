@@ -104,6 +104,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -304,9 +305,15 @@ address {
 
 .advantage-list {
   display: flex;
+  margin-right: -50px;
 }
 
-.advantage-item:not(:last-child) {
+/*.advantage-item:not(:last-child) {
+  margin-right: 50px;
+}*/
+
+.advantage-item {
+  flex-basis: calc(100% / 4 - 50px);
   margin-right: 50px;
 }
 
@@ -320,11 +327,16 @@ address {
 /*-----------------------------------------Ourwork-----------------------------------------------------------------*/
 .ourwork-list {
   display: flex;
+  margin-right: -30px;
 }
 
-.ourwork-item:not(:last-child) {
+.ourwork-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
 }
+/*.ourwork-item:not(:last-child) {
+  margin-right: 30px;
+}*/
 /* ----------------------------------------Ourteam----------------------------------------------------------------- */
 .ourteam-section {
   background-color: #f5f4fa;
@@ -332,12 +344,16 @@ address {
 
 .ourteam-list {
   display: flex;
-  flex-wrap: wrap;
+  margin-right: -30px;
 }
 
-.ourteam-item:not(:last-child) {
+.ourteam-item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
+/*.ourteam-item:not(:last-child) {
+  margin-right: 30px;
+}*/
 
 .ourteam-description {
   text-align: center;
